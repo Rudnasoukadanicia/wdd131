@@ -52,7 +52,7 @@ main h2 {
     grid-column: 1 / -1;
     font-size: 3rem;
     text-align: center;
-    color: black;
+    color: #ffffff;
     font-weight: bold;
 }
 .card {
