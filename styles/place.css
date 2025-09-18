@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #2DC7FF;
+    --secondary-color: #EAD2AC;
+    --text-color: #000000;
+    --accent-color: #ffffff;
+    
+}
+
+body {
+    font-family: 'Lora', sans-serif;
+    margin: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* main {
+    max-width: 800px;
+} */
+
+section.hero {
+    width: 100%;
+    overflow: hidden;
+}
+
+section.hero picture, section.hero img {
+    width: 100%;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+}
+
+section.weather{
+    background-color: var(--accent-color);
+    padding: 16px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 8px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   color: var(--primary-color);
+}
+
+.contenair {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Mobile : icône SVG visible, emoji caché */
+.weather-icon {
+    display: inline-block;
+}
+
+.weather .weather-emoji {
+    display: none;
+}
+
+section.date {
+    background-color: var(--accent-color);
+    padding: 16px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 8px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    bottom: 10px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+/* Desktop / grand écran */
+@media (min-width: 1024px) {
+    /* On cache l'image SVG HTML */
+    .weather-icon {
+        display: none;
+    }
+
+    /* Emoji visible */
+    .weather .weather-emoji {
+        display: inline;
+    }
+
+    /* Ajoute l'icône via pseudo-élément après le H2 */
+    .weather h2::after {
+        content: url('images/weather_day_sun_icon.svg');
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+
+    .contenair {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+

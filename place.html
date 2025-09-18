@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="Information about a specific country">
+    <meta name="author" content="Rudna Danicia Souka">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    
+    <!-- liens -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cossette+Titre:wght@400;700&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Republic of Congo</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+                
+            <picture>
+                <source srcset="images/feille_nature.webp" type="image/webp" media="(min-width: 1024px)">
+                <source srcset="images/imeuble_jaune.webp" type="image/webp" media="(min-width: 600px)">
+                <img src="images/girafe_afrique.webp" alt="Scenic view of Republic of Congo"  loading="lazy">
+            </picture>
+        </section>
+        <div class="contenair">
+    
+            <section class="weather">
+                <h2>
+                    Current Weather
+                    <span class="weather-emoji">⛅</span>
+                </h2>
+                <div class="weather-details">
+                    <img class="weather-icon" src="images/weather_day_sun_icon.svg" alt="Weather icon">
+                    <p>Temperature: <span id="temp">20</span>°C</p>
+                    <p>Wind Speed: <span id="wind">5</span> km/h</p>
+                    <p>Windchill: <span id="windchill"></span></p>
+                </div>
+            </section>
+
+            <section class="date">
+                <h2>Data</h2>
+                <div class="datedetails">
+                    <p>Area : 342.000 Km2</p>
+                    <p>Population : Approximately 5.8 million inhabitants</p>
+                    <p>Capital :Brazzaville </p>
+                    <p>Languages : French</p>
+                    <p>Currency : Central African CFA franc (XAF)</p>
+                    <p>Time Zone : West Africa Time (WAT) UTC+1</p>
+                    <p>Calling Code : +242</p>
+                    <p>Internet TLD : .cg</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Rep of Congo Brazzaville . CG</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
