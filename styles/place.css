@@ -21,10 +21,9 @@ header {
     text-align: center;
 }
 
-main {
-    max-width: 100%;
-    
-}
+/* main {
+    max-width: 800px;
+} */
 
 section.hero {
     width: 100%;
@@ -61,7 +60,6 @@ h2 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    
 }
 
 /* Mobile : icône SVG visible, emoji caché */
