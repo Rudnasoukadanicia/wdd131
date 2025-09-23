@@ -35,7 +35,7 @@ header {
 
 .navigation {
   display: none;
-  flex-direction: row;
+  flex-direction: column;
   background: var(--primary);
 }
 
@@ -43,7 +43,7 @@ header {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: inline-block;
+    display: flex;
     flex-direction: row;
 
 }
@@ -126,6 +126,7 @@ footer {
         display: flex;
         flex-direction: row;
         gap: 1rem;
+        
     }
         #temples-container {
         grid-template-columns: repeat(3, 1fr); /* trois colonnes */
