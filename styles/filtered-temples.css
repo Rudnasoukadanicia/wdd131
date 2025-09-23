@@ -35,38 +35,32 @@ header {
 
 .navigation {
   display: none;
-  flex-direction: column;
+  flex-direction: row;
   background: var(--primary);
 }
 
-.navigation  {
+.navigation ul  {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
+    display: inline-block;
     flex-direction: row;
 
 }
 
-.navigation button {
+.navigation a {
   padding: 0.5rem;
   text-decoration: none;
   color: var(--text);
   
 }
 
-.navigation button:hover {
-  background: var(--secondary);
+.navigation a:hover {
+  background: #fff;
+  border-radius: 8px;
   color: var(--primary);
 }
 
-button {
-    background: none;
-    border: none;
-    font-size: 1rem;
-    color: var(--text);
-    cursor: pointer;
-}
 
 .navigation.show {
   display: flex;

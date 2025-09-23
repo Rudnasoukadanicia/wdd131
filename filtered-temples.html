@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Filtered Temples</title>
-    <meta name="description" content="WDD 131 – Temples ">
+    <meta name="description" content="WDD 131 – FilteredTemples ">
     <meta name="author" content="Rudna Danicia Souka">
     <!-- liens -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cossette+Titre:wght@400;700&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap"
-        rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cossette+Titre:wght@400;700&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap"rel="stylesheet">
 
     <link rel="stylesheet" href="styles/filtered-temples.css">
     <script src="scripts/filtered-temples.js" defer></script>
@@ -25,12 +24,14 @@
         <h1>Album du Temple</h1>
         <button id="menu" aria-label="">☰</button>
         <nav class="navigation">
-    
-            <button data-filter="all">Home</button>
-            <button data-filter="old">Old</button>
-            <button data-filter="new">New</button>  
-            <button data-filter="large">Large</button>
-            <button data-filter="small">Small</button>
+            
+            <ul>
+                <li><a href="#" data-filter="all">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
         
         </nav>
     </header>
