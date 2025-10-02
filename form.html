@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 -Product Form</title>
+    <meta name="description" content="WDD 131 – form">
+    <meta name="author" content="Rudna Danicia Souka">
+    <!-- liens -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cossette+Titre:wght@400;700&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+
+</head>
+<body>
+
+    <h1>Product Review</h1>
+    
+    <form action="review.html" method="get">
+
+        <label for="product">Product Name</label>
+        <select name="product" id="product" required>
+            <option value="" disabled selected>Select a product</option>
+                <!-- Other option add by js -->
+        </select>
+
+        <label for="">Overall Rating</label>
+        <div class="stars">
+            <label for="rating1">☆</label>
+            <input type="radio" id="rating1" name="rating" value="1" required>
+                
+            <label for="rating2">☆☆</label>
+            <input type="radio" id="rating2" name="rating" value="2" required>
+
+            <label for="rating3">☆☆☆</label>
+            <input type="radio" id="rating3" name="rating" value="3" required>
+
+            <label for="rating4">☆☆☆☆</label>
+            <input type="radio" id="rating4" name="rating" value="4" required>
+
+            <label for="rating5">☆☆☆☆☆</label>
+            <input type="radio" id="rating5" name="rating" value="5" required>
+                
+        </div>
+
+        <label for="date">Date of Installation</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="">Which features did you find useful in the product? </label>
+
+        <div class="checkboxes">
+
+            <label for="durab">Durability</label>
+            <input type="checkbox" id="durab" name="durab" value="durab">
+                
+            <label for="use">Ease of Use</label>
+            <input type="checkbox" id="use" name="use" value="use">
+                
+            <label for="perf">Performance</label>
+            <input type="checkbox" id="perf" name="perf" value="perf">
+                
+            <label for="design">Design</label>
+            <input type="checkbox" id="design" name="design" value="design">
+                
+        </div>
+
+        <label for="textarea">Written Review</label>
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <input type="submit" value="Submit">
+                 
+    </form>
+    
+    <footer>
+        <p>&copy;<span id="currentYear"></span> 2025 -Rudna Danicia Souka - Rep of Congo</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
