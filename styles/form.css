@@ -42,7 +42,7 @@ textarea {
     padding: 0.6rem;
     margin-top: 0.3rem;
     border: 1px solid #0066cc;
-    color: #555;
+    color: black;
     border-radius: 10px;
     font-size: 1rem;
 }
@@ -56,7 +56,7 @@ textarea {
 .stars label {
     font-size: 1.5rem;
     cursor: pointer;
-    color: #bbb;
+    color: black;
     transition: color 0.2s;
 }
 
@@ -84,5 +84,5 @@ footer {
     text-align: center;
     margin: 2rem 0;
     font-size: 0.9rem;
-    color: #555;
+    color: black;
 }
