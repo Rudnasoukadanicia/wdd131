@@ -72,6 +72,7 @@ button, input[type="submit"] {
     color: white;
     font-size: 1.1rem;
     cursor: pointer;
+    text-transform: capitalize;
 }
 
 button:hover,
