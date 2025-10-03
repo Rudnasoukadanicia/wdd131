@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Créer un élément pour afficher le compteur
     const counterDisplay = document.createElement("p");
-    counterDisplay.textContent = `Nombre total d'avis soumis : ${reviewCount}`;
+    counterDisplay.textContent = `Total number of reviews submitted: ${reviewCount}`;
     counterDisplay.style.fontWeight = "bold";
     counterDisplay.style.textAlign = "center";
     counterDisplay.style.marginTop = "1rem";

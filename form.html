@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 -Product Form</title>
-    <meta name="description" content="WDD 131 – form">
+    <meta name="description" content="WDD 131 – product form">
     <meta name="author" content="Rudna Danicia Souka">
     <!-- liens -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,11 +26,11 @@
 
         <label for="product">Product Name</label>
         <select name="product" id="product" required>
-            <option value="" disabled selected>Select a product</option>
+            <option value="product" disabled selected>Select a product</option>
                 <!-- Other option add by js -->
         </select>
 
-        <label for="">Overall Rating</label>
+        <label for="overall">Overall Rating</label>
         <div class="stars">
             <label for="rating1">☆</label>
             <input type="radio" id="rating1" name="rating" value="1" required>
@@ -52,7 +52,7 @@
         <label for="date">Date of Installation</label>
         <input type="date" id="date" name="date" required>
 
-        <label for="">Which features did you find useful in the product? </label>
+        <label for="features">Which features did you find useful in the product? </label>
 
         <div class="checkboxes">
 
@@ -76,7 +76,7 @@
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" required>
                  
     </form>
     
